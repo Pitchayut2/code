@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script>
+        function setUsername(){
+            document.getElementById("username-p").innerHTML = document.getElementById("username").value + "'s Gallery";
+        }
+
+        function setProfileImage(){
+            document.getElementById("profileImage").style.backgroundImage = "url(" + document.getElementById("profileimg").value + ")";
+        } 
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="avatar">
+            <div class="profile-img"  id="profileImage">
+            </div>
+            <div class="noti">6</div>
+        </div>
+        <div class="username">
+            <a href="https://www.youtube.com/" class="on-hover">
+            <p style="font-size: x-large; font-weight: 600;" id="username-p">Pitchayut's Gallery</p>
+            </a>
+        </div>
+        <div class="input-group">
+            <div><label style="font-weight: 400;">Username</label><input style="margin-left: 10px;" type="text" 
+                id="username"><button style="margin-left: 10px" id="setUsername" onclick="setUsername()">Apply</button></div>
+            <div><label style="font-weight: 400;">Profile Image</label><input style="margin-left: 10px;" type="text" 
+                id="profileimg"><button style="margin-left: 10px;" id="setProfile" onclick="setProfileImage()">Apply</button></div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-items col-span"><img src="FB_IMG_1698344757489.jpg " class="gallery-items"></div>
+            <div class="gallery-items"><img src="/20231027_014149.jpg" class="gallery-items"></div>
+            <div class="gallery-items"><img src="/20231027_014201.jpg " class="gallery-items"></div>
+            <div class="gallery-items"><img src="/20231027_014214.jpg " class="gallery-items"></div>
+            <div class="gallery-items"><img src="/20231027_014219.jpg " class="gallery-items"></div>
+            <div class="gallery-items"><img src="/20231027_014233.jpg " class="gallery-items"></div>
+            <div class="gallery-items"><img src="/20231027_014236.jpg " class="gallery-items"></div>
+            <div class="gallery-items row-span"><img src="/20231027_014247.jpg " class="gallery-items"></div>
+            <div class="gallery-items "><img src="/20231027_014331.jpg " class="gallery-items"></div>
+            <div class="gallery-items"><img src="/20231027_014416.jpg " class="gallery-items"></div>
+            <!-- <div class="gallery-items"></div>
+            <div class="gallery-items"></div> -->
+        </div>
+    </div>
+
+</body>
+
+</html>
